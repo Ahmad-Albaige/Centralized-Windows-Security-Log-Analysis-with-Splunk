@@ -1,4 +1,4 @@
-Centralized Windows Event Log Analysis with Splunk
+**Centralized Windows Event Log Analysis with Splunk**
 
 
 
@@ -10,7 +10,7 @@ It was to grasp how alerts are passed from an endpoint to a SIEM, and how events
 
 
 
-Scenario
+**Scenario**
 
 
 
@@ -22,7 +22,7 @@ Unlike analyzing local events, logs are submitted to a central Splunk server for
 
 
 
-Environment
+**Environment**
 
 \- Windows VM (Log Source)
 
@@ -36,7 +36,7 @@ Environment
 
 
 
-"Network communication"
+**"Network communication"**
 
 
 
@@ -60,7 +60,7 @@ Even so, the following actions
 
 
 
-Example analysis
+**Example analysis**
 
 
 
@@ -74,13 +74,13 @@ These types of events were investigated:
 
 
 
-Searches were employed in the following ways:
+**Searches were employed in the following ways:**
 
 
 
-Comparison of successful vs failed logins - Detect accounts that create auth events – Instead of analyzing event time series on the endpoint, do the analysis at the central server. 
+Comparison of successful vs failed logins - Detect accounts that create auth events – Instead of analyzing event time series on the endpoint, do the analysis at the central server.
 
-Notes "This is a beginner project, and it emphasizes understanding the fundamentals of a SIEM system and the flow of logs, and it is not about making complex alerts and charts In-depth.
+Notes "This is a beginner project, and it emphasizes understanding the fundamentals of a SIEM system and the flow of logs, **and it is not about making complex alerts and charts In-depth**.
 
 screen captures are included within the repository.
 
