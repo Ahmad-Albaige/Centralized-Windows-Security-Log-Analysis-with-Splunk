@@ -1,9 +1,8 @@
 **Centralized Windows Event Log Analysis with Splunk**
 
+This is a beginner, self-directed SOC lab focused on understanding SIEM fundamentals, log centralization, and authentication event analysis using Splunk.
 
-
-This example will show how Windows Security logs can be collected, centralized, and analyzed with Splunk.
-
+This project demonstrates how Windows Security events are collected, centralized, and analyzed in a SIEM, mirroring entry-level SOC workflows.
 
 
 It was to grasp how alerts are passed from an endpoint to a SIEM, and how events for authentication can be queried after being centralized.
@@ -80,7 +79,6 @@ These types of events were investigated:
 
 Comparison of successful vs failed logins - Detect accounts that create auth events – Instead of analyzing event time series on the endpoint, do the analysis at the central server.
 
-Notes "This is a beginner project, and it emphasizes understanding the fundamentals of a SIEM system and the flow of logs, **and it is not about making complex alerts and charts In-depth**.
-
+Note: This is a beginner-level project emphasizing SIEM fundamentals and log flow, not advanced detection engineering or alert tuning.
 screen captures are included within the repository.
 
