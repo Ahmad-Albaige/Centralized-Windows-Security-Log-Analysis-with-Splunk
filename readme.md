@@ -1,84 +1,47 @@
-**Centralized Windows Event Log Analysis with Splunk**
+# Centralized Windows Log Analysis  
+### Splunk · Windows Event Logs
 
-This is a beginner, self-directed SOC lab focused on understanding SIEM fundamentals, log centralization, and authentication event analysis using Splunk.
+## Objective
 
-This project demonstrates how Windows Security events are collected, centralized, and analyzed in a SIEM, mirroring entry-level SOC workflows.
+Understand how Windows Security logs are collected, centralized, and analyzed in a SIEM environment.
 
+---
 
-It was to grasp how alerts are passed from an endpoint to a SIEM, and how events for authentication can be queried after being centralized.
+## Scenario
 
+Windows authentication events (successful and failed logins) were collected from a local system and forwarded to a central Splunk server for analysis.
 
+---
 
-**Scenario**
+## What I Did
 
+- Installed and configured Splunk Enterprise on a Linux VM  
+- Installed Splunk Universal Forwarder on a Windows system  
+- Forwarded Windows Security logs (Event ID 4624 and 4625) to Splunk  
+- Verified log ingestion over TCP port 9997  
+- Queried authentication events using Splunk searches  
 
+---
 
-For Windows systems, it logs Security events, including logon successes or failures.
+## Analysis
 
+- Compared successful vs failed login events  
+- Identified patterns of repeated failed logins  
+- Observed how authentication activity can be monitored centrally instead of locally  
 
+---
 
-Unlike analyzing local events, logs are submitted to a central Splunk server for analysis and monitoring.
+## Why This Matters
 
+- Centralized logging is essential for monitoring multiple systems  
+- Authentication events provide key indicators of suspicious activity  
+- Enables analysts to detect abnormal login behavior across environments  
 
+---
 
-**Environment**
+## Skills Demonstrated
 
-\- Windows VM (Log Source)
-
-\- Windows Event Log of Security Events
-
-\- Splunk Universal Forwarder
-
-\- Linux VM (SIEM server)
-
-\- Splunk Enterprise
-
-
-
-**"Network communication"**
-
-
-
-\- The logs are transmitted to Splunk using TCP port 9997
-
-Even so, the following actions
-
-\- Setup and implemented Splunk Enterprise on a Linux environment
-
-– Installed the Splunk Universal Forwarder on Windows.
-
-
-
-\- Forwarder was configured to retrieve the Windows Security events
-
-
-
-\- Sent logs to the Splunk server for indexing
-
-\- Evaluated ingestion and events related to authentication using Splunk searches
-
-
-
-**Example analysis**
-
-
-
-These types of events were investigated:
-
-\- Successful logons (EventID 4624)
-
-
-
-\- Logon failures (Event ID 4625)
-
-
-
-**Searches were employed in the following ways:**
-
-
-
-Comparison of successful vs failed logins - Detect accounts that create auth events – Instead of analyzing event time series on the endpoint, do the analysis at the central server.
-
-Note: This is a beginner-level project emphasizing SIEM fundamentals and log flow, not advanced detection engineering or alert tuning.
-screen captures are included within the repository.
-
+- SIEM setup and configuration (Splunk)  
+- Log forwarding and ingestion  
+- Windows Event Log analysis  
+- Basic authentication monitoring  
